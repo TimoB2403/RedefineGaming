@@ -17,14 +17,14 @@ const About = () => {
                 pin: true,
                 pinSpacing: true,
             }
-        })
+        });
 
         clipAnimation.to(".mask-clip-path", {
             width: "100vw",
             height: "100vh",
             borderRadius: 0
-        })
-    })
+        });
+    });
 
   return (
     <div id='about' className='min-h-screen w-screen'>
@@ -45,7 +45,7 @@ const About = () => {
         <div className='h-dvh w-screen' id='clip'>
             <div className='mask-clip-path about-image'>
                 <img
-                src='../public/img/about.webp'
+                src='../img/about.webp'
                 alt='Background'
                 className='absolute left-0 top-0 size-full object-cover'
                 />
