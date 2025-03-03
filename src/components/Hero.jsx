@@ -156,6 +156,18 @@ const Hero = () => {
         </div>
       </div>
       </div>
+      <div className='absolute left-0 top-0 z-[-1] size-full'>
+        <div className='mt-24 px-5 sm:px-10'>
+            <h1 className='special-font hero-heading text-black'>
+                redefi<b>n</b>e
+                </h1>
+
+                <p className='mb-5 max-w-64 font-robert-regular text-black'>
+                    Enter the Megagame Layer <br /> Unleash the Play
+                </p>
+  
+        </div>
+      </div>
       <h1 className='special-font hero-heading absolute bottom-5 right-5 text-black'>
         G<b>a</b>ming
         </h1>
