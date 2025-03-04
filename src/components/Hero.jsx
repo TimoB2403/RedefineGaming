@@ -92,7 +92,7 @@ const Hero = () => {
     <div className='relative h-dvh w-screen overflow-x-hidden'>
 
       {isLoading && (
-        <div className='flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50'>
+        <div className='flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50 flex justify-center items-center'>
           <div className='three-body'>
             <div className='three-body__dot' />
             <div className='three-body__dot' />
@@ -102,7 +102,7 @@ const Hero = () => {
       )}
       <div id='video-frame' className='relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75'>
         <div>
-            <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg'>
+            <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
                 <div onClick={handleMiniVdClick} className='scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100'>
                     <video 
                     ref={nextVideoRef}
@@ -121,7 +121,7 @@ const Hero = () => {
             loop
             muted
             id='next-video'
-            className='absolute-center invisible absolute z-20 size-64 object-cover object-center'
+            className='absolute-center invisible absolute z-20 size-64 object-cover object-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'
             onLoadedData={handleVideoLoad}
             />
 
@@ -134,12 +134,12 @@ const Hero = () => {
             onLoadedData={handleVideoLoad}
             />
       </div>
-      <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
+      <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75 uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem]'>
         G<b>a</b>ming
         </h1>
       <div className='absolute left-0 top-0 z-40 size-full'>
         <div className='mt-24 px-5 sm:px-10'>
-            <h1 className='special-font hero-heading text-blue-100'>
+            <h1 className='special-font hero-heading text-blue-100 uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem]'>
                 redefi<b>n</b>e
                 </h1>
 
@@ -151,24 +151,29 @@ const Hero = () => {
               id="watch-trailer"
               title="Watch trailer"
               leftIcon={<TiLocationArrow />}
-              containerClass="!bg-yellow-300 flex-center gap-1"
+              containerClass="!bg-yellow-300 flex-center gap-1 flex justify-center items-center"
             />
         </div>
       </div>
       </div>
       <div className='absolute left-0 top-0 z-[-1] size-full'>
         <div className='mt-24 px-5 sm:px-10'>
-            <h1 className='special-font hero-heading text-black'>
+            <h1 className='special-font hero-heading text-black uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem]'>
                 redefi<b>n</b>e
                 </h1>
 
                 <p className='mb-5 max-w-64 font-robert-regular text-black'>
                     Enter the Megagame Layer <br /> Unleash the Play
                 </p>
-  
+                <Button
+              id="watch-trailer"
+              title="Watch trailer"
+              leftIcon={<TiLocationArrow />}
+              containerClass="!bg-black text-white flex-center gap-1 flex justify-center items-center"
+            />
         </div>
       </div>
-      <h1 className='special-font hero-heading absolute bottom-5 right-5 text-black'>
+      <h1 className='special-font hero-heading absolute bottom-5 right-5 text-black '>
         G<b>a</b>ming
         </h1>
     </div>

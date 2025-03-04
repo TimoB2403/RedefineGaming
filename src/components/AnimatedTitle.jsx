@@ -30,15 +30,15 @@ const AnimatedTitle = ({ title, containerClass }) => {
   return (
     <div
     ref={containerRef}
-      className={`animated-title ${containerClass}`}>
+      className={`animated-title ${containerClass} flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem]`}>
       {title.split("<br />").map((line, index) => (
         <div
         key={index}
-        className='flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3'>
+        className='flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3 flex justify-center items-center'>
           {line.split(" ").map((word, i) => (
             <span
             key={i}
-            className='animated-word'
+            className='animated-word special-font font-zentry font-black opacity-0'
             dangerouslySetInnerHTML={{ __html: word }} />
           ))}
           </div>

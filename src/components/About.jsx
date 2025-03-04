@@ -37,13 +37,13 @@ const About = () => {
                 containerClass="mt-5 !text-black text-center"
             />
 
-            <div className='about-subtext'>
+            <div className='about-subtext absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem]'>
                 <p>The Game of Games begins-your Life, now an epic MMORPG</p>
                 <p>it unites every player from countless games and platfroms</p>
             </div>
         </div>
         <div className='h-dvh w-screen' id='clip'>
-            <div className='mask-clip-path about-image'>
+            <div className='mask-clip-path about-image absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw]'>
                 <img
                 src='../img/about.webp'
                 alt='Background'
